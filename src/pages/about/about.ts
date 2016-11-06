@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 /* an example of how to import a third party libary into ionic 2*/
-import Chart from 'chart.js/src/chart.js'
+/*import Chart from 'chart.js/src/chart.js'*/
 
 @Component({
   selector: 'page-about',
@@ -17,7 +17,7 @@ export class AboutPage {
 
 	ngOnInit() { 
 		var ctx = document.getElementById("myChart");
-		var myChart = new Chart(ctx, {
+		/*var myChart = new Chart(ctx, {
 		    type: 'bar',
 		    data: {
 		        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -52,6 +52,6 @@ export class AboutPage {
 		            }]
 		        }
 		    }
-		});
+		});*/
 	}
 }
