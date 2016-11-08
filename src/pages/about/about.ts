@@ -12,6 +12,21 @@ import { NavController } from 'ionic-angular';
 })
 export class AboutPage {
 
+	public datasets = [{
+		label: "# of Votes",
+		data: [12, 19, 3, 5, 2, 3]
+	}];
+	public labels = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'];
+	public options = {
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  };
+
 	constructor(public navCtrl: NavController) {
 	}
 

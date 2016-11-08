@@ -7,7 +7,18 @@
 </ion-header>
 
 <ion-content padding>
-	<canvas id="myChart" width="400" height="400"></canvas>
-	<script>
-	</script>
+	<div style="display: block">
+		<canvas baseChart width="400" height="400"
+	      [datasets]="datasets"
+	      [labels]="labels"
+	      [options]="options"
+	      [chartType]="'line'">
+	    </canvas>
+
+	   <!--  <canvas baseChart
+              [data]="doughnutChartData"
+              [labels]="doughnutChartLabels"
+              [chartType]="doughnutChartType">
+        </canvas> -->
+	</div>
 </ion-content>
